@@ -1,10 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.soft2go</groupId>
 	<artifactId>nexus-project</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>D9</version>
 	<packaging>pom</packaging>
 	<name>nexus-project</name>
 
@@ -40,7 +38,8 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/masargoga/mytestrepo.git</developerConnection>
-	</scm>
+	  <tag>D9</tag>
+  </scm>
 	
 	<build>
 		<extensions>
