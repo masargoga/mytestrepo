@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.soft2go</groupId>
     <artifactId>nexus-project</artifactId>
-    <version>D9</version>
+    <version>D9-SNAPSHOT</version>
   </parent>
   <artifactId>module-01</artifactId>
   <name>module-01</name>
