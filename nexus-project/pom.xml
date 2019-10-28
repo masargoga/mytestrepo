@@ -1,19 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.soft2go</groupId>
-  <artifactId>nexus-project</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>nexus-project</name>
-  
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.soft2go</groupId>
+	<artifactId>nexus-project</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>nexus-project</name>
+
+	<properties>
 		<java.version>1.8</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<nexus.host>10.109.86.152</nexus.host>
-  </properties>
-  
-  <repositories>
+	</properties>
+
+	<repositories>
 		<repository>
 			<id>tmfopenapi-group</id>
 			<url>http://${nexus.host}:8081/repository/tmfopenapi-group/</url>
@@ -29,10 +31,39 @@
 			<id>tmfopenapi-snapshots</id>
 			<url>http://${nexus.host}:8081/repository/tmfopenapi-snapshots/</url>
 		</snapshotRepository>
+		
+		<site>
+			<id>my.git.server</id>
+			<url>scm:git:https://github.com/masargoga/mytestrepo.git</url>
+		</site>
 	</distributionManagement>
+
+	<scm>
+		<developerConnection>scm:git:https://github.com/masargoga/mytestrepo.git</developerConnection>
+	</scm>
 	
-  <modules>
-  	<module>module-01</module>
-  	<module>module-02</module>
-  </modules>
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-scm</artifactId>
+				<version>3.3.3</version>
+			</extension>
+			<extension>
+				<groupId>org.apache.maven.scm</groupId>
+				<artifactId>maven-scm-manager-plexus</artifactId>
+				<version>1.11.1</version>
+			</extension>
+			<extension>
+				<groupId>org.apache.maven.scm</groupId>
+				<artifactId>maven-scm-provider-gitexe</artifactId>
+				<version>1.11.1</version>
+			</extension>
+		</extensions>
+	</build>
+
+	<modules>
+		<module>module-01</module>
+		<module>module-02</module>
+	</modules>
 </project>
