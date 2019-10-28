@@ -38,7 +38,6 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/masargoga/mytestrepo.git</developerConnection>
-	  <tag>HEAD</tag>
   </scm>
 	
 	<build>
