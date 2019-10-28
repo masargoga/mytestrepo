@@ -37,7 +37,7 @@
 	</distributionManagement>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/masargoga/mytestrepo.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:masargoga/mytestrepo.git</developerConnection>
   </scm>
 	
 	<build>
