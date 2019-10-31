@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.soft2go</groupId>
 	<artifactId>nexus-project</artifactId>
-	<version>T11</version>
+	<version>T11-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>nexus-project</name>
 
@@ -38,7 +38,7 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:masargoga/mytestrepo.git</developerConnection>
-    <tag>nexus-project-T11</tag>
+    <tag>T08</tag>
   </scm>
 	
 	<build>
