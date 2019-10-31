@@ -4,7 +4,7 @@
     <groupId>com.soft2go</groupId>
     <artifactId>nexus-project</artifactId>
 
-    <version>T08</version>
+    <version>T08-SNAPSHOT</version>
   </parent>
   <artifactId>module-01</artifactId>
   <name>module-01</name>
